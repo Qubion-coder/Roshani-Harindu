@@ -41,7 +41,7 @@ export default function StoryApp() {
   });
 
   useEffect(() => {
-    const weddingDate = new Date('2026-11-01T09:00:00').getTime();
+    const weddingDate = new Date('2026-12-21T09:00:00').getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -126,11 +126,11 @@ export default function StoryApp() {
               className="z-10 flex flex-col items-center gap-8"
             >
               <h1 className="text-center px-4 leading-[1.1] drop-shadow-sm">
-                <span className="serif italic text-6xl sm:text-[6.5rem] text-[#2C2C2C] font-medium">Harsha</span>
+                <span className="serif italic text-6xl sm:text-[6.5rem] text-[#2C2C2C] font-medium">Roshani</span>
                 <br />
-                <span className="serif italic text-4xl sm:text-5xl text-[#8B7355] inline-block py-2">&amp;</span>
+                <span className="serif italic text-4xl sm:text-5xl text-[#D4AF37] inline-block py-2">&amp;</span>
                 <br />
-                <span className="serif italic text-6xl sm:text-[6.5rem] text-[#2C2C2C] font-medium">Sumali</span>
+                <span className="serif italic text-6xl sm:text-[6.5rem] text-[#2C2C2C] font-medium">Harindu</span>
               </h1>
               <p className="text-sm uppercase tracking-[0.3em] text-[#2C2C2C] font-medium text-center">
                 Wedding Invitation
@@ -138,7 +138,7 @@ export default function StoryApp() {
 
               <button
                 onClick={() => setInvitationOpened(true)}
-                className="mt-8 px-8 py-3 bg-[#3D2B1F] text-white rounded-full text-sm uppercase tracking-widest hover:bg-[#8B7355] transition-colors duration-300 shadow-lg shadow-black/10"
+                className="mt-8 px-8 py-3 bg-[#1A1A1A] text-white rounded-full text-sm uppercase tracking-widest hover:bg-[#D4AF37] transition-colors duration-300 shadow-lg shadow-black/10"
               >
                 View Invitation
               </button>
@@ -186,20 +186,27 @@ export default function StoryApp() {
         )}
       </AnimatePresence>
 
-      <div className="snap-container no-scrollbar bg-paper relative text-[#3D2B1F] font-sans">
+      <div className="snap-container no-scrollbar bg-paper relative text-[#1A1A1A] font-sans">
 
 
 
         {/* --- SCREEN 1: Invite Details --- */}
         <section className="snap-section relative z-10 overflow-hidden bg-transparent">
-          <SectionBackground />
+          <div className="absolute inset-0 z-0 pointer-events-none">
+            <img
+              src="/ChatGPT%20Image%20Sep%2030,%202026,%2002_42_00%20AM.png"
+              alt="Hero Background"
+              className="w-full h-full object-cover opacity-90"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/20 to-white/60" />
+          </div>
           <div className="absolute inset-0 overflow-visible flex flex-col items-center p-6 text-center">
             <div className="w-full my-auto flex flex-col items-center justify-center py-10">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="w-full max-w-sm flex flex-col items-center justify-center text-[#3D2B1F]"
+                className="w-full max-w-sm flex flex-col items-center justify-center text-[#1A1A1A]"
               >
 
 
@@ -210,66 +217,66 @@ export default function StoryApp() {
                     transition={{ delay: 0.8, duration: 1 }}
                     className="mb-6 flex flex-col items-center"
                   >
-                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-bold text-[#B8860B] mb-4">
+                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-bold text-[#1A1A1A] mb-4">
                       WE CORDIALLY INVITE
                     </p>
-                    <p className="script text-2xl sm:text-4xl gold-gradient-text drop-shadow-sm mb-4 text-center px-4">
+                    <p className="script text-2xl sm:text-4xl text-[#1A1A1A] drop-shadow-sm mb-4 text-center px-4">
                       {guestPrefix ? `${guestPrefix} ${guestName}` : guestName}
                     </p>
-                    <div className="h-px w-16 bg-[#B8860B]/50 mb-6"></div>
-                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-medium text-[#8B6508] mb-2 sm:mb-4">
+                    <div className="h-px w-16 bg-[#1A1A1A]/50 mb-6"></div>
+                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-bold text-[#1A1A1A] mb-2 sm:mb-4">
                       TO CELEBRATE OUR
                     </p>
                   </motion.div>
                 ) : (
                   <>
-                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-medium text-[#8B6508] mb-1">
+                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-bold text-[#1A1A1A] mb-1">
                       INVITE YOU TO CELEBRATE
                     </p>
-                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-medium text-[#8B6508] mb-2 sm:mb-4">
+                    <p className="text-[12px] sm:text-sm uppercase tracking-[0.2em] font-bold text-[#1A1A1A] mb-2 sm:mb-4">
                       OUR
                     </p>
                   </>
                 )}
 
-                <h1 className="script text-6xl sm:text-[7rem] gold-gradient-text mb-8 sm:mb-12 drop-shadow-lg font-normal">
+                <h1 className="script text-6xl sm:text-[7rem] text-[#1A1A1A] mb-8 sm:mb-12 drop-shadow-lg font-bold">
                   Wedding
                 </h1>
 
                 <div className="flex flex-col items-center w-full mb-8 sm:mb-10">
-                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#B8860B] font-bold mb-2">NOVEMBER</p>
+                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#1A1A1A] font-bold mb-2">DECEMBER</p>
                   <div className="flex items-center justify-center w-full gap-4">
-                    <div className="flex-1 text-right border-y border-[#B8860B]/40 py-2">
-                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#8B6508] font-bold">SUNDAY</p>
+                    <div className="flex-1 text-right border-y border-[#1A1A1A]/40 py-2">
+                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#1A1A1A] font-bold">MONDAY</p>
                     </div>
-                    <p className="serif text-[5.5rem] sm:text-[7rem] font-medium text-[#B8860B] leading-none px-1">01</p>
-                    <div className="flex-1 text-left border-y border-[#B8860B]/40 py-2">
-                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#8B6508] font-bold">AT 9:00 AM</p>
+                    <p className="serif text-[5.5rem] sm:text-[7rem] font-bold text-[#1A1A1A] leading-none px-1">21</p>
+                    <div className="flex-1 text-left border-y border-[#1A1A1A]/40 py-2">
+                      <p className="text-[14px] sm:text-[16px] uppercase tracking-widest text-[#1A1A1A] font-bold">AT 9:00 AM</p>
                     </div>
                   </div>
-                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#B8860B] font-bold mt-2">2026</p>
+                  <p className="text-[18px] sm:text-[22px] uppercase tracking-widest text-[#1A1A1A] font-bold mt-2">2026</p>
                 </div>
 
                 <a
-                  href="https://maps.app.goo.gl/YmrpkEzxa63mSUmq9"
+                  href="https://maps.app.goo.gl/GuyxyJ4o4GXQEZpf9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="space-y-2 mt-2 sm:mt-4 text-[#8B6508] hover:opacity-70 transition-opacity block"
+                  className="space-y-2 mt-2 sm:mt-4 text-[#1A1A1A] hover:opacity-70 transition-opacity block"
                 >
                   <p className="text-[16px] sm:text-[18px] uppercase tracking-widest font-bold flex items-center justify-center gap-1.5">
-                    <MapPin size={14} className="text-[#FFD700]" />
-                    HEMALIE RECEPTION HALL
+                    <MapPin size={14} className="text-[#1A1A1A]" />
+                    RADISSON BLU RESORT
                   </p>
-                  <p className="text-[14px] sm:text-[16px] uppercase tracking-[0.15em] font-medium">MATARA</p>
-                  <p className="text-[12px] sm:text-[14px] uppercase tracking-[0.15em] font-medium px-4">WALGAMA, MATARA (GROUND FLOOR)</p>
+                  <p className="text-[14px] sm:text-[16px] uppercase tracking-[0.15em] font-bold">GALLE</p>
+                  <p className="text-[12px] sm:text-[14px] uppercase tracking-[0.15em] font-bold px-4">GALLE RADISSON BLU RESORT, GALLE</p>
                 </a>
 
                 <div className="mt-8 sm:mt-10">
-                  <p className="text-[12px] sm:text-sm uppercase tracking-[0.15em] font-bold text-[#B8860B]">RECEPTION TO FOLLOW</p>
+                  <p className="text-[12px] sm:text-sm uppercase tracking-[0.15em] font-bold text-[#1A1A1A]">EVENT TIMELINE : 9.00 A.M. - 3.30 P.M.</p>
                 </div>
 
                 <div className="mt-4 sm:mt-6 flex justify-center">
-                  <svg className="w-10 h-10 text-[#B8860B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-10 h-10 text-[#1A1A1A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M15 12c-1.5-1-2-2-2-4v-4l6-2v6c0 2-.5 3-2 4M9 12c1.5-1 2-2 2-4v-4l-6-2v6c0 2 .5 3 2 4M13 12v8M11 12v8M9 20h6" />
                     <circle cx="15.5" cy="5.5" r="0.5" fill="currentColor" />
                     <circle cx="14" cy="7.5" r="0.5" fill="currentColor" />
@@ -291,30 +298,30 @@ export default function StoryApp() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="bg-white p-10 pt-16 rounded-t-[10rem] rounded-b-[2rem] border border-[#EAE1D3] w-full max-w-sm flex flex-col items-center shadow-xl relative overflow-hidden"
+                className="bg-white p-10 pt-16 rounded-t-[10rem] rounded-b-[2rem] border border-[#F0E6D2] w-full max-w-sm flex flex-col items-center shadow-xl relative overflow-hidden"
               >
                 {/* Subtle texture overlay on the card */}
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dust.png')] opacity-30 pointer-events-none mix-blend-overlay" />
 
                 <div className="relative z-10 w-full flex flex-col items-center text-center">
-                  <h2 className="cursive text-5xl sm:text-6xl text-[#C8B29E] mb-3 mt-2">Together with</h2>
-                  <h3 className="serif text-[13px] uppercase tracking-[0.3em] text-[#3D2B1F] mb-10 font-bold">Our Families</h3>
+                  <h2 className="cursive text-5xl sm:text-6xl text-[#D4AF37] mb-3 mt-2">Together with</h2>
+                  <h3 className="serif text-[13px] uppercase tracking-[0.3em] text-[#1A1A1A] mb-10 font-bold">Our Families</h3>
 
                   <div className="flex flex-col items-center w-full mb-8">
                     <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 mb-3 font-bold">Bride's Parents</p>
-                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. B.B.G Susantha Priyal<br/>&amp; Mrs. W. Nimela Saroojani</p>
+                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. &amp; Mrs. Bandara</p>
                   </div>
 
                   {/* Elegant Divider */}
                   <div className="flex items-center justify-center gap-3 w-3/4 mx-auto mb-8">
-                    <div className="h-px bg-[#EAE1D3] flex-1"></div>
-                    <div className="w-1.5 h-1.5 rotate-45 bg-[#C8B29E]"></div>
-                    <div className="h-px bg-[#EAE1D3] flex-1"></div>
+                    <div className="h-px bg-[#F0E6D2] flex-1"></div>
+                    <div className="w-1.5 h-1.5 rotate-45 bg-[#D4AF37]"></div>
+                    <div className="h-px bg-[#F0E6D2] flex-1"></div>
                   </div>
 
                   <div className="flex flex-col items-center w-full">
                     <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 mb-3 font-bold">Groom's Parents</p>
-                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. N.W Nimal<br/>&amp; Mrs. H.G Chandrapali</p>
+                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. &amp; Mrs. Shanaka</p>
                   </div>
                 </div>
               </motion.div>
@@ -331,20 +338,20 @@ export default function StoryApp() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="bg-white p-10 pt-16 rounded-t-[10rem] rounded-b-[2rem] border border-[#EAE1D3] w-full max-w-sm flex flex-col items-center shadow-xl relative overflow-hidden"
+                className="bg-white p-10 pt-16 rounded-t-[10rem] rounded-b-[2rem] border border-[#F0E6D2] w-full max-w-sm flex flex-col items-center shadow-xl relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dust.png')] opacity-30 pointer-events-none mix-blend-overlay" />
 
                 <div className="relative z-10 w-full flex flex-col items-center text-center">
-                  <h2 className="cursive text-5xl sm:text-6xl text-[#C8B29E] mb-3 mt-2">Forever Begins In</h2>
-                  <h3 className="serif text-[13px] uppercase tracking-[0.3em] text-[#3D2B1F] mb-10 font-bold">A Grace-filled occasion</h3>
+                  <h2 className="cursive text-5xl sm:text-6xl text-[#D4AF37] mb-3 mt-2">Forever Begins In</h2>
+                  <h3 className="serif text-[13px] uppercase tracking-[0.3em] text-[#1A1A1A] mb-10 font-bold">A Grace-filled occasion</h3>
 
                   <div className="flex flex-row items-center justify-center gap-6 w-full mb-8">
                     <div className="flex flex-col items-center">
                       <p className="serif text-5xl text-[#2C2C2C] leading-none mb-2">{timeLeft.days}</p>
                       <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 font-bold">Days</p>
                     </div>
-                    <div className="text-4xl text-[#C8B29E] font-light -mt-4">:</div>
+                    <div className="text-4xl text-[#D4AF37] font-light -mt-4">:</div>
                     <div className="flex flex-col items-center">
                       <p className="serif text-5xl text-[#2C2C2C] leading-none mb-2">{timeLeft.hours}</p>
                       <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 font-bold">Hours</p>
@@ -353,9 +360,9 @@ export default function StoryApp() {
 
                   {/* Elegant Divider */}
                   <div className="flex items-center justify-center gap-3 w-3/4 mx-auto mb-8">
-                    <div className="h-px bg-[#EAE1D3] flex-1"></div>
-                    <div className="w-1.5 h-1.5 rotate-45 bg-[#C8B29E]"></div>
-                    <div className="h-px bg-[#EAE1D3] flex-1"></div>
+                    <div className="h-px bg-[#F0E6D2] flex-1"></div>
+                    <div className="w-1.5 h-1.5 rotate-45 bg-[#D4AF37]"></div>
+                    <div className="h-px bg-[#F0E6D2] flex-1"></div>
                   </div>
 
                   <div className="flex flex-row items-center justify-center gap-6 w-full">
@@ -363,7 +370,7 @@ export default function StoryApp() {
                       <p className="serif text-5xl text-[#2C2C2C] leading-none mb-2">{timeLeft.minutes}</p>
                       <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 font-bold">Mins</p>
                     </div>
-                    <div className="text-4xl text-[#C8B29E] font-light -mt-4">:</div>
+                    <div className="text-4xl text-[#D4AF37] font-light -mt-4">:</div>
                     <div className="flex flex-col items-center">
                       <p className="serif text-5xl text-[#2C2C2C] leading-none mb-2">{timeLeft.seconds}</p>
                       <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 font-bold">Secs</p>
@@ -388,107 +395,122 @@ export default function StoryApp() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="bg-[#FAF7F2]/90 backdrop-blur-sm p-6 py-8 rounded-[2rem] border border-[#EAE1D3] w-full max-w-sm flex flex-col items-center shadow-xl relative overflow-y-auto no-scrollbar max-h-[85vh]"
+                className="bg-[#FFFFFF]/90 backdrop-blur-sm p-6 py-8 rounded-[2rem] border border-[#F0E6D2] w-full max-w-sm flex flex-col items-center shadow-xl relative overflow-y-auto no-scrollbar max-h-[85vh]"
               >
                 <div className="flex items-center justify-center gap-3 w-1/3 mx-auto mb-4">
-                  <div className="h-px bg-[#C8B29E] flex-1"></div>
-                  <div className="w-1.5 h-1.5 rotate-45 bg-[#8B7355]"></div>
-                  <div className="h-px bg-[#C8B29E] flex-1"></div>
+                  <div className="h-px bg-[#D4AF37] flex-1"></div>
+                  <div className="w-1.5 h-1.5 rotate-45 bg-[#D4AF37]"></div>
+                  <div className="h-px bg-[#D4AF37] flex-1"></div>
                 </div>
 
-                <h2 className="serif text-[20px] uppercase tracking-[0.25em] text-[#8B7355] font-semibold mb-1 mt-1">
+                <h2 className="serif text-[20px] uppercase tracking-[0.25em] text-[#D4AF37] font-semibold mb-1 mt-1">
                   OUR STORY
                 </h2>
-                <h3 className="script text-[32px] text-[#C8B29E] mb-4">
+                <h3 className="script text-[32px] text-[#D4AF37] mb-4">
                   And so, our forever begins
                 </h3>
 
-                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-3">
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#1A1A1A] mb-3">
                   It was never just one moment. It was every smile, every conversation, every quiet understanding, and every little memory that brought us here.
                 </p>
 
-                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-3">
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#1A1A1A] mb-3">
                   Somewhere between chance and destiny, we found in each other a love that feels effortless, rare and beautifully certain.
                 </p>
 
-                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-3">
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#1A1A1A] mb-3">
                   A love that became friendship. A friendship that became home. And a home we now choose to build together.
                 </p>
 
-                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-3">
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#1A1A1A] mb-3">
                   Today, we turn the page to the most beautiful chapter of our story.
                 </p>
 
-                <p className="script text-[28px] text-[#8B7355] leading-[1.2] mb-3 px-4">
+                <p className="script text-[28px] text-[#D4AF37] leading-[1.2] mb-3 px-4">
                   Not simply a beginning, but a promise of forever.
                 </p>
 
-                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#3D2B1F] mb-4">
+                <p className="serif text-[14px] sm:text-[15px] leading-[1.5] text-[#1A1A1A] mb-4">
                   With hearts filled with love, we invite you to share in the joy of the day we become one.
                 </p>
 
                 <div className="flex items-center justify-center gap-3 w-1/3 mx-auto mb-4">
-                  <div className="h-px bg-[#C8B29E] flex-1"></div>
-                  <div className="w-1.5 h-1.5 rotate-45 bg-[#8B7355]"></div>
-                  <div className="h-px bg-[#C8B29E] flex-1"></div>
+                  <div className="h-px bg-[#D4AF37] flex-1"></div>
+                  <div className="w-1.5 h-1.5 rotate-45 bg-[#D4AF37]"></div>
+                  <div className="h-px bg-[#D4AF37] flex-1"></div>
                 </div>
 
-                <h3 className="script text-[40px] text-[#8B7355]">
-                  Sumali &amp; Harsha
+                <h3 className="script text-[40px] text-[#D4AF37]">
+                  Roshani &amp; Harindu
                 </h3>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* --- SCREEN 4: Timeline --- */}
+        {/* --- SCREEN 4: Gallery --- */}
         <section className="snap-section relative z-10 overflow-hidden">
           <SectionBackground />
           <div className="absolute inset-0 overflow-visible flex flex-col items-center p-6 text-center">
-            <div className="w-full my-auto flex flex-col items-center justify-center py-10">
+            <div className="w-full my-auto flex flex-col items-center justify-center py-6 h-full">
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="bg-white/40 backdrop-blur-md p-8 rounded-[2rem] border border-white/60 w-full max-w-sm flex flex-col items-center shadow-lg py-12"
+                className="w-full max-w-sm flex flex-col items-center relative overflow-hidden bg-white/40 backdrop-blur-md p-6 py-10 rounded-[2rem] border border-white/60 shadow-xl"
               >
-                <h2 className="serif text-4xl tracking-[0.2em] text-[#3D2B1F] font-medium uppercase mb-2">
-                  Wedding
+                <div className="flex items-center justify-center gap-3 w-1/3 mx-auto mb-2">
+                  <div className="h-px bg-[#D4AF37] flex-1"></div>
+                  <div className="w-1.5 h-1.5 rotate-45 bg-[#D4AF37]"></div>
+                  <div className="h-px bg-[#D4AF37] flex-1"></div>
+                </div>
+
+                <h2 className="serif text-[20px] uppercase tracking-[0.25em] text-[#1A1A1A] font-semibold mb-1 mt-2">
+                  GALLERY
                 </h2>
-                <h3 className="script text-3xl sm:text-5xl text-[#8B7355] mb-10">
-                  Timeline
+                <h3 className="script text-[36px] text-[#D4AF37] mb-8 leading-tight">
+                  Captured Moments
                 </h3>
 
-                <div className="flex flex-col w-full relative pt-2">
-                  {/* Timeline line */}
-                  <div className="absolute left-[31.5px] top-6 bottom-6 w-[1px] bg-gradient-to-b from-transparent via-[#8B7355]/40 to-transparent" />
-
-                  {([
-                    { time: "9:00 AM", title: "GUEST ARRIVAL", icon: Users },
-                    { time: "9:22 AM", title: "PORUWA CEREMONY", icon: Flower2 },
-                    { time: "9:57 AM", title: "REGISTRATION", icon: PenTool },
-                    { time: "12:30 PM", title: "LUNCH BUFFET & RECEPTION", icon: Utensils },
-                    { time: "4:05 PM", title: "GOING AWAY", icon: Car },
-                  ]).map((item, idx) => {
-                    const Icon = item.icon;
-                    return (
-                    <div key={idx} className="relative z-10 flex items-center gap-5 mb-8 last:mb-0 w-full px-2">
-                      <div className="relative shrink-0">
-                        <div className="w-12 h-12 rounded-full bg-[#FAF7F2]/90 border border-[#8B7355]/30 flex items-center justify-center shadow-md backdrop-blur-sm z-10 relative">
-                          <Icon size={20} className="text-[#8B7355]" />
-                        </div>
-                      </div>
-                      <div className="flex-1 text-left pb-2 border-b border-[#8B7355]/20 border-dashed last:border-0">
-                        <p className="text-[15px] font-bold text-[#8B7355] mb-1 serif italic">{item.time}</p>
-                        <p className="text-[11px] uppercase tracking-[0.15em] text-[#3D2B1F] font-bold">{item.title}</p>
-                      </div>
-                    </div>
-                  )})}
+                <div className="grid grid-cols-2 gap-3 w-full">
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{ delay: 0.1, duration: 0.8 }} 
+                    className="rounded-tl-[3rem] rounded-br-[1rem] overflow-hidden shadow-md border-2 border-white aspect-[4/5]"
+                  >
+                     <img src="/images/DSC05680%20copy.jpg.jpeg" alt="Couple 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  </motion.div>
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{ delay: 0.2, duration: 0.8 }} 
+                    className="rounded-tr-[3rem] rounded-bl-[1rem] overflow-hidden shadow-md border-2 border-white aspect-[3/4] mt-8"
+                  >
+                     <img src="/images/DSC05715%20copy.jpg.jpeg" alt="Couple 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  </motion.div>
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{ delay: 0.3, duration: 0.8 }} 
+                    className="rounded-bl-[3rem] rounded-tr-[1rem] overflow-hidden shadow-md border-2 border-white aspect-[3/4] -mt-8"
+                  >
+                     <img src="/images/DSC05874%20copy.jpg.jpeg" alt="Couple 3" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  </motion.div>
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{ delay: 0.4, duration: 0.8 }} 
+                    className="rounded-br-[3rem] rounded-tl-[1rem] overflow-hidden shadow-md border-2 border-white aspect-[4/5]"
+                  >
+                     <img src="/images/DSC05876%20copy.jpg.jpeg" alt="Couple 4" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  </motion.div>
                 </div>
               </motion.div>
             </div>
           </div>
         </section>
+
 
         {/* --- SCREEN 5: The Details --- */}
         <section className="snap-section relative z-10 overflow-hidden">
@@ -501,39 +523,33 @@ export default function StoryApp() {
                 transition={{ duration: 1 }}
                 className="w-full max-w-sm flex flex-col gap-4"
               >
-                <div className="bg-[#FAF7F2] p-8 rounded-[2rem] shadow-md border border-white">
-                  <h3 className="script text-2xl sm:text-4xl text-[#8B7355] mb-1">the</h3>
-                  <h2 className="serif text-4xl tracking-[0.2em] text-[#3D2B1F] font-medium uppercase mb-6">Details</h2>
+                <div className="bg-[#FFFFFF] p-8 rounded-[2rem] shadow-md border border-white">
+                  <h3 className="script text-2xl sm:text-4xl text-[#D4AF37] mb-1">the</h3>
+                  <h2 className="serif text-4xl tracking-[0.2em] text-[#1A1A1A] font-medium uppercase mb-6">Details</h2>
 
                   <div className="w-full h-32 rounded-xl overflow-hidden mb-4 relative">
-                    <img src="/WhatsApp Image 2026-09-29 at 17.17.02.jpeg" className="w-full h-full object-cover" alt="Hemalie Reception Hall" />
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/547617139.jpg?k=ed14dcd25bdf680138937dbb0e7532324ac7c2183f13c078fd14a07bdf7e6b52&o=" className="w-full h-full object-cover" alt="Radisson Blu Resort, Galle" />
                   </div>
 
-                  <div className="bg-[#EAE1D3] py-2 rounded-t-xl mb-1">
-                    <p className="text-[12px] uppercase tracking-[0.2em] font-bold text-[#8B7355]">Location</p>
+                  <div className="bg-[#F0E6D2] py-2 rounded-t-xl mb-1">
+                    <p className="text-[12px] uppercase tracking-[0.2em] font-bold text-[#D4AF37]">Location</p>
                   </div>
                   <div className="bg-white py-4 rounded-b-xl shadow-sm border border-white mb-4 flex flex-col items-center">
-                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F]">Hemalie Reception Hall</p>
-                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mt-1">Matara</p>
-                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mb-3 px-2 text-center">Walgama, Matara (Ground Floor)</p>
+                    <p className="text-[12px] uppercase font-bold text-[#1A1A1A]">Radisson Blu Resort</p>
+                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mt-1">Galle</p>
+                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mb-3 px-2 text-center">Galle Radisson Blu Resort, Galle</p>
                     <a
-                      href="https://maps.app.goo.gl/YmrpkEzxa63mSUmq9"
+                      href="https://maps.app.goo.gl/GuyxyJ4o4GXQEZpf9"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-[#EAE1D3] text-[#3D2B1F] rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-[#C8B29E] transition-colors"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-[#F0E6D2] text-[#1A1A1A] rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-[#D4AF37] transition-colors"
                     >
                       <MapPin size={10} />
                       Live Location
                     </a>
                   </div>
 
-                  <div className="bg-[#EAE1D3] py-2 rounded-t-xl mb-1 mt-4">
-                    <p className="text-[12px] uppercase tracking-[0.2em] font-bold text-[#8B7355]">Contact Numbers</p>
-                  </div>
-                  <div className="bg-white py-4 rounded-b-xl shadow-sm border border-white mb-4 flex flex-col items-center">
-                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F] mb-1">Sumali: 077 258 5286</p>
-                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F]">Harsha: 071 595 2772</p>
-                  </div>
+
                 </div>
               </motion.div>
             </div>
@@ -549,7 +565,7 @@ export default function StoryApp() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="bg-white p-6 md:p-10 rounded-[2.5rem] border border-[#EAE1D3] w-full max-w-sm min-h-[80vh] h-auto flex flex-col justify-center items-center shadow-xl"
+                className="bg-white p-6 md:p-10 rounded-[2.5rem] border border-[#F0E6D2] w-full max-w-sm min-h-[80vh] h-auto flex flex-col justify-center items-center shadow-xl"
               >
                 <div className="flex items-center justify-center gap-3 w-[60%] mx-auto mb-10 mt-4 md:mt-0">
                   <div className="h-px bg-zinc-300 flex-1"></div>
@@ -562,7 +578,7 @@ export default function StoryApp() {
                 </div>
 
                 <p className="serif text-[13px] sm:text-[15px] uppercase tracking-[0.15em] font-bold text-[#2C2C2C] mb-6">
-                  BY OCTOBER 15, 2026
+                  BY DECEMBER 5, 2026
                 </p>
 
                 <div className="w-full">
@@ -582,7 +598,7 @@ export default function StoryApp() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="bg-white p-6 md:p-10 rounded-[2.5rem] border border-[#EAE1D3] w-full max-w-sm h-auto flex flex-col justify-center items-center shadow-xl"
+                className="bg-white p-6 md:p-10 rounded-[2.5rem] border border-[#F0E6D2] w-full max-w-sm h-auto flex flex-col justify-center items-center shadow-xl"
               >
                 <div className="flex items-center justify-center gap-3 w-[60%] mx-auto mb-6 mt-4 md:mt-0">
                   <div className="h-px bg-zinc-300 flex-1"></div>
@@ -590,7 +606,7 @@ export default function StoryApp() {
                   <div className="h-px bg-zinc-300 flex-1"></div>
                 </div>
 
-                <h3 className="script text-3xl sm:text-5xl text-[#C8B29E] mb-6">Leave a Wish</h3>
+                <h3 className="script text-3xl sm:text-5xl text-[#D4AF37] mb-6">Leave a Wish</h3>
 
                 <p className="serif text-[13px] sm:text-[15px] text-[#2C2C2C] mb-8 leading-relaxed">
                   We'd love to hear from you! Please leave your wishes, advice, or a simple hello for us.
@@ -602,9 +618,9 @@ export default function StoryApp() {
               </motion.div>
 
               <div className="mt-10 mb-8 w-full text-center z-20 relative">
-                <p className="text-[#3D2B1F] drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] text-[10px] font-sans tracking-widest uppercase leading-relaxed font-semibold">
+                <p className="text-[#1A1A1A] drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] text-[10px] font-sans tracking-widest uppercase leading-relaxed font-semibold">
                   Want a beautiful wedding website like this? <br />
-                  Create yours with <a target="_blank" rel="noreferrer" className="text-[#8B7355] hover:text-[#3D2B1F] font-bold underline decoration-[#8B7355] underline-offset-4 transition-colors" href="https://wa.me/94707819074">invitemint</a>
+                  Create yours with <a target="_blank" rel="noreferrer" className="text-[#D4AF37] hover:text-[#1A1A1A] font-bold underline decoration-[#D4AF37] underline-offset-4 transition-colors" href="https://wa.me/94707819074">invitemint</a>
                 </p>
               </div>
             </div>
@@ -616,12 +632,12 @@ export default function StoryApp() {
       {/* Audio and Play Button */}
       <audio
         ref={audioRef}
-        src="/Teddy Swims - You're Still The One (Shania Twain Cover).mp3"
+        src="/Edd_Sheeran_-_Perfect_(mp3.pm) (4).mp3"
         loop
       />
       <button
         onClick={togglePlay}
-        className={`fixed bottom-6 right-6 z-[60] p-3 rounded-full shadow-lg transition-all ${isPlaying ? 'bg-[#C8B29E] text-white' : 'bg-white/80 backdrop-blur-sm text-[#8B7355] border border-[#EAE1D3]'
+        className={`fixed bottom-6 right-6 z-[60] p-3 rounded-full shadow-lg transition-all ${isPlaying ? 'bg-[#D4AF37] text-white' : 'bg-white/80 backdrop-blur-sm text-[#D4AF37] border border-[#F0E6D2]'
           }`}
         aria-label="Toggle music"
       >

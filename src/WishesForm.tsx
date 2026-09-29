@@ -85,7 +85,7 @@ export default function WishesForm() {
             value={name}
             onChange={(ev) => setName(ev.target.value)}
             placeholder="Your Name"
-            className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-base text-[#3D2B1F] font-serif outline-none focus:border-[#C8B29E] focus:ring-1 focus:ring-[#C8B29E]"
+            className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-base text-[#1A1A1A] font-serif outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37]"
           />
         </div>
 
@@ -95,17 +95,17 @@ export default function WishesForm() {
             onChange={(ev) => setMessage(ev.target.value)}
             placeholder="Write your wishes for the couple..."
             rows={4}
-            className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-base text-[#3D2B1F] font-serif outline-none focus:border-[#C8B29E] focus:ring-1 focus:ring-[#C8B29E] resize-none"
+            className="w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-base text-[#1A1A1A] font-serif outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] resize-none"
           />
         </div>
 
         {errorMessage && <p className="text-[12px] text-red-600 font-semibold">{errorMessage}</p>}
-        {successMessage && <p className="text-[12px] text-[#8B7355] font-bold">{successMessage}</p>}
+        {successMessage && <p className="text-[12px] text-[#D4AF37] font-bold">{successMessage}</p>}
 
         <button
           type="submit"
           disabled={submitting}
-          className="w-full bg-[#3D2B1F] text-white py-3.5 rounded-xl text-[12px] uppercase tracking-widest font-bold disabled:opacity-60 shadow-md transition-colors hover:bg-black mt-2"
+          className="w-full bg-[#1A1A1A] text-white py-3.5 rounded-xl text-[12px] uppercase tracking-widest font-bold disabled:opacity-60 shadow-md transition-colors hover:bg-black mt-2"
         >
           {submitting ? "Sending..." : "Send Wishes"}
         </button>

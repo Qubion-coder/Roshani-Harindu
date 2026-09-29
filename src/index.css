@@ -18,24 +18,24 @@
   --font-cursive: "Great Vibes", cursive;
   --font-sans: "Inter", sans-serif;
 
-  /* Primary accent (Pink) */
-  --color-sage: #e88ba9;
+  /* Primary accent (Gold) */
+  --color-sage: #D4AF37;
 
   /* Background (White) */
   --color-paper: #ffffff;
 
-  /* Extended pink/white palette */
-  --color-sand: #f8cdd6;
-  --color-taupe: #c9889a;
-  --color-rust: #d96684;
-  --color-umber: #9e435d;
-  --color-sienna: #b8526e;
+  /* Extended gold/white palette */
+  --color-sand: #F5D76E;
+  --color-taupe: #C5A059;
+  --color-rust: #B8860B;
+  --color-umber: #8B6508;
+  --color-sienna: #D4AF37;
 }
 
 body {
   margin: 0;
   background-color: var(--color-paper);
-  color: #3D2B1F;
+  color: #1A1A1A;
   font-family: var(--font-sans);
 }
 
@@ -150,7 +150,7 @@ video::-webkit-media-controls-start-playback-button {
 
 /* Premium Gold Gradient */
 .gold-gradient-text {
-  background: linear-gradient(to right, #B8860B 0%, #FFD700 25%, #FFF8DC 50%, #FFD700 75%, #B8860B 100%);
+  background: linear-gradient(to right, #D4AF37 0%, #F5D76E 25%, #FFF8DC 50%, #F5D76E 75%, #D4AF37 100%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -160,7 +160,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .gold-gradient-text-subtle {
-  background: linear-gradient(to right, #8B6508 0%, #D4AF37 50%, #8B6508 100%);
+  background: linear-gradient(to right, #C5A059 0%, #D4AF37 50%, #C5A059 100%);
   color: #000;
   background-clip: text;
   -webkit-background-clip: text;
