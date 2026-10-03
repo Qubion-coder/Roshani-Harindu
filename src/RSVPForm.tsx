@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function RSVPForm() {
-  const endpoint = "https://script.google.com/macros/s/AKfycbw5KuuJACRja_qKYt4IHkaf7g6oBUr_DPaxrfVy2PvUTS-dRnPcwjGhSTnVS41q24jJsA/exec";
+  const endpoint = "https://script.google.com/macros/s/AKfycbwqRCrWEX9LDmBvjvBJ1_uK2WpxrrkHKH-Av-w75iVWbLZpdGJ190vZVnKa8RurNxItpA/exec";
 
   const [attendance, setAttendance] = useState<"yes" | "no">("yes");
   const [name, setName] = useState<string>("");
@@ -41,6 +41,7 @@ export default function RSVPForm() {
     }
 
     const payload = {
+      _sheetName: "RSVP",
       name: name.trim(),
       attendance,
       submittedAt: new Date().toISOString(),

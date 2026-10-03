@@ -473,37 +473,37 @@ export default function StoryApp() {
                 </h3>
 
                 <div className="grid grid-cols-2 gap-3 w-full">
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }} 
-                    whileInView={{ opacity: 1, y: 0 }} 
-                    transition={{ delay: 0.1, duration: 0.8 }} 
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1, duration: 0.8 }}
                     className="rounded-tl-[3rem] rounded-br-[1rem] overflow-hidden shadow-md border-2 border-white aspect-[4/5]"
                   >
-                     <img src="/images/DSC05680%20copy.jpg.jpeg" alt="Couple 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    <img src="/images/DSC05680%20copy.jpg.jpeg" alt="Couple 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                   </motion.div>
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }} 
-                    whileInView={{ opacity: 1, y: 0 }} 
-                    transition={{ delay: 0.2, duration: 0.8 }} 
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2, duration: 0.8 }}
                     className="rounded-tr-[3rem] rounded-bl-[1rem] overflow-hidden shadow-md border-2 border-white aspect-[3/4] mt-8"
                   >
-                     <img src="/images/DSC05715%20copy.jpg.jpeg" alt="Couple 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    <img src="/images/DSC05715%20copy.jpg.jpeg" alt="Couple 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                   </motion.div>
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }} 
-                    whileInView={{ opacity: 1, y: 0 }} 
-                    transition={{ delay: 0.3, duration: 0.8 }} 
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.8 }}
                     className="rounded-bl-[3rem] rounded-tr-[1rem] overflow-hidden shadow-md border-2 border-white aspect-[3/4] -mt-8"
                   >
-                     <img src="/images/DSC05874%20copy.jpg.jpeg" alt="Couple 3" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    <img src="/images/DSC05874%20copy.jpg.jpeg" alt="Couple 3" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                   </motion.div>
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }} 
-                    whileInView={{ opacity: 1, y: 0 }} 
-                    transition={{ delay: 0.4, duration: 0.8 }} 
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4, duration: 0.8 }}
                     className="rounded-br-[3rem] rounded-tl-[1rem] overflow-hidden shadow-md border-2 border-white aspect-[4/5]"
                   >
-                     <img src="/images/DSC05876%20copy.jpg.jpeg" alt="Couple 4" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    <img src="/images/DSC05876%20copy.jpg.jpeg" alt="Couple 4" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                   </motion.div>
                 </div>
               </motion.div>

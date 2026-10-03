@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function WishesForm() {
-  const endpoint = "https://script.google.com/macros/s/AKfycbw5KuuJACRja_qKYt4IHkaf7g6oBUr_DPaxrfVy2PvUTS-dRnPcwjGhSTnVS41q24jJsA/exec";
+  const endpoint = "https://script.google.com/macros/s/AKfycbwqRCrWEX9LDmBvjvBJ1_uK2WpxrrkHKH-Av-w75iVWbLZpdGJ190vZVnKa8RurNxItpA/exec";
 
   const [name, setName] = useState<string>("");
   const [message, setMessage] = useState<string>("");
@@ -53,6 +53,7 @@ export default function WishesForm() {
     }
 
     const payload = {
+      _sheetName: "Wish",
       name: name.trim(),
       message: message.trim(),
       submittedAt: new Date().toISOString(),

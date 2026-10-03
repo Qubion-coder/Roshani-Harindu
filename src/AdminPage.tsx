@@ -83,7 +83,7 @@ export default function AdminPage() {
             disabled={!guestName.trim()}
             className="w-full py-4 bg-[#D4AF37] text-white rounded-xl uppercase tracking-widest font-bold text-base hover:bg-[#b09780] transition-colors disabled:opacity-50 shadow-md cursor-pointer"
           >
-            Generate Links
+            Generate Link
           </button>
         </div>
       </div>
@@ -106,14 +106,14 @@ export default function AdminPage() {
                 className={`flex-1 py-4 flex items-center justify-center gap-2 rounded-xl transition-colors text-sm uppercase tracking-wider font-bold cursor-pointer ${copiedType === 'link' ? 'bg-green-100 text-green-600' : 'bg-[#FFFFFF] text-[#D4AF37] border border-[#F0E6D2] hover:bg-[#F0E6D2]'}`}
               >
                 {copiedType === 'link' ? <CheckCircle2 className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                Copy Link Only
+                {copiedType === 'link' ? 'Link Copied!' : 'Copy Link Only'}
               </button>
               <button 
                 onClick={() => copyToClipboard(generated.message, 'message')}
                 className={`flex-1 py-4 flex items-center justify-center gap-2 rounded-xl transition-colors text-sm uppercase tracking-wider font-bold cursor-pointer ${copiedType === 'message' ? 'bg-green-100 text-green-600' : 'bg-[#D4AF37] text-white hover:bg-[#b09780] shadow-md'}`}
               >
                 {copiedType === 'message' ? <CheckCircle2 className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                Copy Full Message
+                {copiedType === 'message' ? 'Message Copied!' : 'Copy Full Message'}
               </button>
             </div>
           </div>
